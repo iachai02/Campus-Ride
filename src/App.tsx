@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import HomePage from "./pages/HomePage";
 import Navbar from "./components/Navbar";
+import SignUp from "./pages/SignUp";
 
 /*
 // Conventional props
@@ -29,7 +30,8 @@ function App() {
       <div className="App">
         <Navbar />
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={<SignUp />} />
+          <Route path="/homepage" element={<HomePage />} />
         </Routes>
       </div>
     </Router>

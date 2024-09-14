@@ -13,6 +13,7 @@ function HomePage() {
         </p>
         <div className="landing-buttons">
           <button className="btn btn-driver">Become a Driver</button>
+          <button className="btn btn-passenger">Need a Ride</button>
         </div>
       </header>
     </div>

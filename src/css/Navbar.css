@@ -14,6 +14,7 @@
     z-index: 100;
     box-sizing: border-box;
     border-bottom: 2px solid #ccc;
+    font-size: 20px;
 }
 
 .navbar-logo, .nav-link{
@@ -32,4 +33,8 @@
     display: inline;
     list-style: none;
     text-decoration: none;
+}
+
+.nav-link:hover {
+    opacity: 0.8;
 }

@@ -34,6 +34,28 @@ strong {
     font-weight: bold;
 }
 
+.landing-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.btn {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-family: var(--font-family);
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+    background-color: #2980b9;
+    color: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background-color: #409ad5;
+}
+
 /* screens smaller than 768px (tablets and mobile devices) */
 @media (max-width: 768px) {
 

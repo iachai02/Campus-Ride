@@ -13,6 +13,11 @@ function Navbar() {
       <ul className="navbar-links">
         <li>
           <Link to="/" className="nav-link">
+            Events
+          </Link>
+        </li>
+        <li>
+          <Link to="/" className="nav-link">
             Contact
           </Link>
         </li>

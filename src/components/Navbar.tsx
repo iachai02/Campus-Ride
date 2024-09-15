@@ -7,7 +7,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-brand">
         <Link to="/" className="navbar-logo">
-          Campus Ride
+          CampusRide
         </Link>
       </div>
       <ul className="navbar-links">

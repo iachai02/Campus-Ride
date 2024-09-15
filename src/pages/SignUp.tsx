@@ -35,7 +35,7 @@ const SignUp: React.FC = () => {
       <h1>CampusRide</h1>
       <div className="sign-up-box">
         <form onSubmit={handleSubmit}>
-          <h2>Sign Up</h2>
+          <h2>Create a CampusRide account</h2>
           <label>Full Name:</label>
           <input
             type="text"

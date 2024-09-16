@@ -1,0 +1,12 @@
+.login-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 50vh;
+    margin: 0;
+}
+
+.login-box {
+    border: 2px solid #ccc;
+}

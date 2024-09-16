@@ -9,6 +9,7 @@ import "./App.css";
 import HomePage from "./pages/HomePage";
 import Navbar from "./components/Navbar";
 import SignUp from "./pages/SignUp";
+import Login from "./pages/Login";
 
 /*
 // Conventional props
@@ -54,6 +55,7 @@ function App() {
           <Routes>
             <Route path="/" element={<SignUp />} />
             <Route path="/signup" element={<SignUp />} />
+            <Route path="/login" element={<Login />} />
             <Route path="/homepage" element={<HomePage />} />
           </Routes>
         </Layout>

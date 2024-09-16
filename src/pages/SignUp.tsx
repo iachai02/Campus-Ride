@@ -27,14 +27,13 @@ const SignUp: React.FC = () => {
   // function is triggered once form is submitted
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log(formData);
     navigate("./login");
   };
   return (
     <div className="sign-up-page">
       <h1>CampusRide</h1>
       <div className="sign-up-box">
-        <form>
+        <form onSubmit={handleSubmit}>
           <h2>Create a CampusRide account</h2>
           <div className="form-group">
             <label htmlFor="firstName">First Name</label>
@@ -54,6 +53,11 @@ const SignUp: React.FC = () => {
           </div>
           <div className="form-group">
             <button type="submit">Create Account</button>
+          </div>
+          <div>
+            <p>
+              Already have an account? <a href="/login">Login</a>
+            </p>
           </div>
         </form>
       </div>

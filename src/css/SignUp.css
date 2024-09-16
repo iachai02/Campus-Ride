@@ -19,7 +19,6 @@
 }
 
 .sign-up-box {
-    background-color: white;
     padding: 30px;
     border: 2px solid #ccc;
     border-radius: 10px;
@@ -72,4 +71,16 @@ button {
 
 button:hover {
     background-color: var(--secondary-color);
+}
+
+div p {
+    font-size: 10px;
+}
+
+div a {
+    color: black;
+}
+
+div a:hover {
+    color: purple;
 }

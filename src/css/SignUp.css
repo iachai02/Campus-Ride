@@ -1,42 +1,75 @@
-body {
-    background-color: #D3D3D3;
+.sign-up-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    padding-bottom: 50px;
+    background-color: white;
+    margin: 0;
 }
 
-form h2 {
-    font-size: 30px;
+.sign-up-page h1 {
+    font-size: 48px;
+    color: var(--primary-color); /* Blue color for the heading */
+    margin-bottom: 0; /* Remove margin to get rid of space between heading and box */
+    text-align: center;
+    padding: 0; /* Remove extra padding from the heading */
+    width: 100%;
 }
 
 .sign-up-box {
-    border: 2px solid #ccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 60px;
     background-color: white;
-    margin-top: 30px;
+    padding: 30px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-    text-align: left;
-    width: 400px;
-    height: 500px;
+    width: 100%; /* Allow the box to take the width of the container */
+    max-width: 400px; /* Set a max width for the form box */
+    box-sizing: border-box; /* Ensures padding doesn't add extra width */
+    margin-top: 10px;
 }
 
+form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+/* Form layout */
 .form-group {
     margin-bottom: 15px;
-}
+    text-align: left; /* Keep the labels left-aligned */
+    width: 100%; /* Make the form group take the full width */
+  }
 
-form label {
+/* Ensure labels and inputs are displayed as block */
+.form-group label {
     display: block;
     font-size: 16px;
+    margin-bottom: 5px;
 }
-
-form input {
-    width: 100%;
+  
+.form-group input {
+    width: 100%; /* Ensure inputs take full width */
     padding: 10px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box; /* Ensures padding doesn't add extra width */
 }
 
 button {
-    width: 
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    border: none;
+    font-family: var(--font-family);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
 }

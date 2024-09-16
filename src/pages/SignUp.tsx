@@ -34,24 +34,19 @@ const SignUp: React.FC = () => {
     <div className="sign-up-page">
       <h1>CampusRide</h1>
       <div className="sign-up-box">
-        <form onSubmit={handleSubmit}>
+        <form>
           <h2>Create a CampusRide account</h2>
-          <label>Full Name:</label>
-          <input
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
-          <label>Email:</label>
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
+          <div className="form-group">
+            <label htmlFor="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" required />
+          </div>
+          <div className="form-group">
+            <label htmlFor="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div className="form-group">
+            <button type="submit">Create Account</button>
+          </div>
         </form>
       </div>
     </div>

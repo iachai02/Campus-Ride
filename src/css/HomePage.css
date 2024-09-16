@@ -1,12 +1,12 @@
-.home-page {
-    font-family: var(--font-family);
-}
-
-h1 {
+.home-page h1 {
     color: var(--primary-color);
     margin: auto;
     white-space: nowrap;
     text-align: center;
+}
+
+.home-page p {
+    font-size: 20px;
 }
 
 .special-text {

@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const DriverForm = () => {
   const [fullName, setFullName] = useState("");
   const [spots, setSpots] = useState(1);
   const [preferredPassengers, setPreferredPassengers] = useState("");
   const [location, setLocation] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -17,6 +19,8 @@ const DriverForm = () => {
       location,
     };
     console.log(driverData); // send this data to backend
+
+    navigate("/homepage");
   };
 
   return (

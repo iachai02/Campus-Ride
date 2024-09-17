@@ -6,7 +6,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import "./App.css";
-import "./css/global.css";
+import "./css/Global.css";
 import HomePage from "./pages/HomePage";
 import Navbar from "./components/Navbar";
 import SignUpPage from "./pages/SignUpPage";

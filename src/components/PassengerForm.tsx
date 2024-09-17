@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const PassengerForm = () => {
   const [fullName, setFullName] = useState("");
   const [pickupLocation, setPickupLocation] = useState("");
   const [preferredDriver, setPreferredDriver] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -13,6 +15,8 @@ const PassengerForm = () => {
       preferredDriver,
     };
     console.log(passengerData); // send this to backend
+
+    navigate("/homepage");
   };
 
   return (
@@ -42,6 +46,7 @@ const PassengerForm = () => {
           onChange={(e) => setPreferredDriver(e.target.value)}
         />
       </label>
+      <button type="submit">Sign up as a Passenger</button>
     </form>
   );
 };

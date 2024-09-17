@@ -15,3 +15,31 @@ html, body {
     align-items: center; /* Vertically center the content */
     font-family: var(--font-family);
 }
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    border: none;
+    font-family: var(--font-family);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+div p {
+    font-size: 10px;
+}
+
+div a {
+    color: black;
+}
+
+div a:hover {
+    color: purple;
+}

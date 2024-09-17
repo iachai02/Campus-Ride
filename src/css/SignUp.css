@@ -7,6 +7,7 @@
     padding-bottom: 50px;
     background-color: white;
     margin: 0;
+    overflow: hidden;
 }
 
 .sign-up-page h1 {
@@ -55,32 +56,4 @@ form h2 {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box; /* Ensures padding doesn't add extra width */
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: var(--primary-color);
-    border: none;
-    font-family: var(--font-family);
-    color: white;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: var(--secondary-color);
-}
-
-div p {
-    font-size: 10px;
-}
-
-div a {
-    color: black;
-}
-
-div a:hover {
-    color: purple;
 }

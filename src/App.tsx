@@ -9,6 +9,7 @@ import "./App.css";
 import "./css/global.css";
 import HomePage from "./pages/HomePage";
 import Navbar from "./components/Navbar";
+import SignUpPage from "./pages/SignUpPage";
 import SignUp from "./pages/SignUp";
 import Login from "./pages/Login";
 
@@ -58,6 +59,7 @@ function App() {
             <Route path="/signup" element={<SignUp />} />
             <Route path="/login" element={<Login />} />
             <Route path="/homepage" element={<HomePage />} />
+            <Route path="/role-signup" element={<SignUpPage />} />
           </Routes>
         </Layout>
       </div>

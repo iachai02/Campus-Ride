@@ -1,7 +1,18 @@
-import React, { ReactNode, ReactElement } from "react";
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import "../css/HomePage.css";
 
 function HomePage() {
+  const navigate = useNavigate();
+
+  const handleDriverClick = () => {
+    navigate("/role-signup");
+  };
+
+  const handlePassengerClick = () => {
+    navigate("/role-signup");
+  };
+
   return (
     <div className="home-page">
       <h1>Welcome to UCSD Campus Ride</h1>
@@ -11,8 +22,12 @@ function HomePage() {
         <strong>passenger</strong>!
       </p>
       <div className="landing-buttons">
-        <button className="btn btn-driver">Become a Driver</button>
-        <button className="btn btn-passenger">Need a Ride</button>
+        <button className="btn btn-driver" onClick={handleDriverClick}>
+          Become a Driver
+        </button>
+        <button className="btn btn-passenger" onClick={handlePassengerClick}>
+          Need a Ride
+        </button>
       </div>
     </div>
   );

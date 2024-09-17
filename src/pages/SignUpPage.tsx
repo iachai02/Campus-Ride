@@ -1,6 +1,6 @@
 import React, { useState, ReactNode, ReactElement } from "react";
-import DriverPage from "./DriverPage";
-import PassengerPage from "./PassengerPage";
+import DriverForm from "../components/DriverForm";
+import PassengerForm from "../components/PassengerForm";
 
 const SignUpPage = () => {
   const [role, setRole] = useState("");
@@ -15,8 +15,8 @@ const SignUpPage = () => {
         <option value="passenger">Passenger</option>
       </select>
 
-      {role == "driver" && <DriverPage />}
-      {role == "passenger" && <PassengerPage />}
+      {role == "driver" && <DriverForm />}
+      {role == "passenger" && <PassengerForm />}
     </div>
   );
 };

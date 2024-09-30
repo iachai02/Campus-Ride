@@ -3,10 +3,11 @@
 .navbar {
     font-family: var(--font-family);
     font-weight: bold;
+    font-size: 1.25rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem; /* Add padding for space */
+    padding: 0.1rem 2rem; /* Add padding for space */
     position: fixed; /* Fix the navbar at the top */
     top: 0;
     left: 0;
@@ -21,14 +22,13 @@
 .navbar-logo {
     text-decoration: none;
     color: var(--navbar-color);
-    font-size: 1.5rem;
     margin-right: auto; /* This pushes the links to the right side */
 }
 
 .navbar-links {
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
     margin-left: auto; /* Ensure links are on the right side */
 }
 

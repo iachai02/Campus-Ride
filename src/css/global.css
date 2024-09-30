@@ -16,6 +16,10 @@ html, body {
     font-family: var(--font-family);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 button {
     width: 100%;
     padding: 10px;
@@ -26,10 +30,16 @@ button {
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease;
 }
 
 button:hover {
     background-color: var(--secondary-color);
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(0);
 }
 
 div p {

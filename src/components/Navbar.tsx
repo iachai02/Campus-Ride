@@ -1,8 +1,14 @@
-import React, { ReactNode, ReactElement } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../css/Navbar.css";
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-brand">
@@ -22,6 +28,7 @@ function Navbar() {
           </Link>
         </li>
       </ul>
+      <div className="burger-menu" onClick={toggleMenu}></div>
     </nav>
   );
 }

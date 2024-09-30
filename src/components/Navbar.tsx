@@ -18,6 +18,16 @@ function Navbar() {
       </div>
       <ul className="navbar-links">
         <li>
+          <Link to="/create-group" className="nav-link">
+            Create
+          </Link>
+        </li>
+        <li>
+          <Link to="/" className="nav-link">
+            Join
+          </Link>
+        </li>
+        <li>
           <Link to="/" className="nav-link">
             Events
           </Link>

@@ -13,6 +13,7 @@ import SignUpPage from "./pages/SignUpPage";
 import SignUp from "./pages/SignUp";
 import Login from "./pages/Login";
 import CreateGroup from "./components/CreateGroup";
+import JoinGroup from "./components/JoinGroup";
 
 /*
 // Conventional props
@@ -62,6 +63,7 @@ function App() {
             <Route path="/homepage" element={<HomePage />} />
             <Route path="/role-signup" element={<SignUpPage />} />
             <Route path="/create-group" element={<CreateGroup />} />
+            <Route path="/join-group" element={<JoinGroup />} />
           </Routes>
         </Layout>
       </div>

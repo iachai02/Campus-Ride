@@ -23,7 +23,7 @@ function Navbar() {
           </Link>
         </li>
         <li>
-          <Link to="/" className="nav-link">
+          <Link to="/join-group" className="nav-link">
             Join
           </Link>
         </li>

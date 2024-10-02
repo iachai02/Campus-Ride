@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../css/JoinGroup.css";
 
 function JoinGroup() {
   const [groupCode, setGroupCode] = useState("");

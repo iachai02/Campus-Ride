@@ -14,6 +14,8 @@ import SignUp from "./pages/SignUp";
 import Login from "./pages/Login";
 import CreateGroup from "./components/CreateGroup";
 import JoinGroup from "./components/JoinGroup";
+import EventsPage from "./pages/EventsPage";
+import EventList from "./components/EventList";
 
 /*
 // Conventional props
@@ -51,7 +53,20 @@ function Layout({ children }: { children: React.ReactNode }) {
   );
 }
 
+interface Event {
+  title: string;
+  group: string;
+  date: string;
+  questions?: { type: string; question: string }[];
+}
+
 function App() {
+  const user = { isGroupCreator: true };
+  const events: Event[] = [
+    { title: "Event 1", group: "Group 1", date: "2024-01-01" },
+  ];
+  const groups = ["Group 1", "Group 2"];
+
   return (
     <Router>
       <div className="App">
@@ -64,6 +79,14 @@ function App() {
             <Route path="/role-signup" element={<SignUpPage />} />
             <Route path="/create-group" element={<CreateGroup />} />
             <Route path="/join-group" element={<JoinGroup />} />
+            <Route
+              path="/event-list"
+              element={<EventList events={events} groups={groups} />}
+            />
+            <Route
+              path="/events"
+              element={<EventsPage user={user} events={events} />}
+            />
           </Routes>
         </Layout>
       </div>

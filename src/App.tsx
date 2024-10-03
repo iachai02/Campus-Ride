@@ -83,10 +83,7 @@ function App() {
               path="/event-list"
               element={<EventList events={events} groups={groups} />}
             />
-            <Route
-              path="/events"
-              element={<EventsPage user={user} events={events} />}
-            />
+            <Route path="/events" element={<EventsPage user={user} />} />
           </Routes>
         </Layout>
       </div>

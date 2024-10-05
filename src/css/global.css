@@ -14,6 +14,7 @@ html, body {
     justify-content: center; /* Horizontally center the content */
     align-items: center; /* Vertically center the content */
     font-family: var(--font-family);
+    padding: 0;
 }
 
 html {

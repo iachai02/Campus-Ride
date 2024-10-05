@@ -18,6 +18,20 @@ function EventsPage({ user }: { user: any }) {
       createdAt: new Date(),
       url: "https://forms.gle/qd6hgg718PKcZNPN8",
     },
+    {
+      title: "Event 3",
+      postedBy: "User 2",
+      group: "Group 2",
+      createdAt: new Date(),
+      url: "https://forms.gle/qd6hgg718PKcZNPN8",
+    },
+    {
+      title: "Event 4",
+      postedBy: "User 2",
+      group: "Group 2",
+      createdAt: new Date(),
+      url: "https://forms.gle/qd6hgg718PKcZNPN8",
+    },
   ]); // store the events, including newly posted ones
   const [eventTitle, setEventTitle] = useState("");
   const [filterGroup, setFilterGroup] = useState("");
@@ -107,13 +121,19 @@ function EventsPage({ user }: { user: any }) {
 
       <ul className="event-list">
         {filteredEvents.map((event, index) => (
-          <li key={index} className="event-item">
-            <h3>{event.title}</h3>
-            <p>Posted by: {event.postedBy}</p>
-            <p>Group: {event.group}</p>
-            <p>Posted on: {new Date(event.createdAt).toLocaleString()}</p>
-            <a href={event.url} target="_blank" rel="noopener noreferrer">
-              View Event Form
+          <li key={index}>
+            <a
+              href={event.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="event-item-link"
+            >
+              <div className="event-item">
+                <h3>{event.title}</h3>
+                <p>Posted by: {event.postedBy}</p>
+                <p>Group: {event.group}</p>
+                <p>Posted on: {new Date(event.createdAt).toLocaleString()}</p>
+              </div>
             </a>
           </li>
         ))}
